@@ -1,0 +1,7 @@
+﻿<input id="btnLogoff" class="btn btn-success pull-right"
+       type="button" value="Log Off" />
+
+$('#btnLogoff').click(function () {
+    sessionStorage.removeItem('accessToken');
+    window.location.href = "Login.html";
+});
